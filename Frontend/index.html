@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Library Management</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>📚 Online Library</h1>
+    <p>Manage books—add, borrow, return—clean and simple.</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>All Books</h2>
+      <div class="toolbar">
+        <input id="searchInput" type="text" placeholder="Search by title or author"/>
+        <button id="refreshBtn">Refresh</button>
+      </div>
+      <table class="table" id="booksTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="booksBody"></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Add New Book</h2>
+      <form id="addBookForm" class="form">
+        <div class="form-row">
+          <label for="title">Title</label>
+          <input id="title" name="title" required/>
+        </div>
+        <div class="form-row">
+          <label for="author">Author</label>
+          <input id="author" name="author" required/>
+        </div>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Made by Bishal • Online Library Management</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
